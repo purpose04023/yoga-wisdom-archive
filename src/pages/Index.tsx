@@ -5,6 +5,7 @@ import Layout from "@/components/layout/Layout";
 import ContentCard from "@/components/ContentCard";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Video, Headphones, FileText, Languages, ScrollText } from "lucide-react";
+import shivaHero from "@/assets/shiva-hero.png";
 
 const categories = [
   { label: "Books", path: "/books", icon: BookOpen, desc: "Modern yoga texts" },
@@ -42,30 +43,58 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="relative py-24 px-4 text-center bg-gradient-to-b from-gold-light/30 to-background">
-        <div className="container mx-auto max-w-3xl">
-          <p className="text-sm font-medium tracking-widest uppercase text-primary mb-4 animate-fade-in">Ancient Wisdom, Modern Access</p>
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Yoga Wisdom Portal
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            A curated archive of yoga books, ancient texts, translations, video teachings, podcasts, and scholarly journals.
+      {/* Cinematic Hero with Shiva backdrop */}
+      <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden -mt-16 pt-16">
+        <div
+          className="absolute inset-0 bg-cover bg-center scale-105"
+          style={{ backgroundImage: `url(${shivaHero})` }}
+          aria-hidden
+        />
+        <div className="absolute inset-0 bg-gradient-hero" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/60 via-transparent to-charcoal/40" aria-hidden />
+
+        <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
+          <p className="text-xs md:text-sm font-medium tracking-[0.4em] uppercase text-gold mb-6 animate-fade-in">
+            ॐ &nbsp; Ancient Wisdom · Modern Access &nbsp; ॐ
           </p>
-          <div className="flex gap-3 justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <Button asChild size="lg"><Link to="/books">Explore Library</Link></Button>
-            <Button asChild variant="outline" size="lg"><Link to="/about">About Guruji</Link></Button>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-warm-ivory mb-6 leading-[1.05] animate-fade-in drop-shadow-[0_4px_30px_rgba(0,0,0,0.6)]" style={{ animationDelay: "0.1s" }}>
+            Yoga <span className="text-gradient-gold italic">Wisdom</span> Portal
+          </h1>
+          <p className="text-lg md:text-xl text-warm-ivory/85 max-w-2xl mx-auto mb-10 font-light leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            A sacred archive of yogic books, ancient śāstras, translations, video teachings, podcasts, and scholarly journals — preserved for seekers across the world.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <Button asChild size="lg" className="bg-gradient-gold hover:opacity-90 text-primary-foreground border-0 shadow-gold text-base px-8 h-12">
+              <Link to="/books">Enter the Library</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="bg-warm-ivory/10 backdrop-blur-md border-warm-ivory/40 text-warm-ivory hover:bg-warm-ivory/20 hover:text-warm-ivory text-base px-8 h-12">
+              <Link to="/about">About Guruji</Link>
+            </Button>
           </div>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-warm-ivory/60 text-xs tracking-[0.3em] uppercase animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          ↓ Scroll to explore
         </div>
       </section>
 
       {/* Category tiles */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="font-serif text-2xl font-bold mb-8 text-center">Browse by Category</h2>
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-12">
+          <p className="text-xs tracking-[0.3em] uppercase text-primary mb-3">The Archive</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold">Browse by Category</h2>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {categories.map((cat) => (
-            <Link key={cat.path} to={cat.path} className="group flex flex-col items-center p-6 rounded-xl bg-card border hover:border-primary/30 hover:shadow-md transition-all text-center">
-              <cat.icon className="h-8 w-8 text-primary mb-3 group-hover:scale-110 transition-transform" />
+          {categories.map((cat, i) => (
+            <Link
+              key={cat.path}
+              to={cat.path}
+              className="group flex flex-col items-center p-6 rounded-2xl bg-card border border-border/60 hover:border-primary/40 hover:shadow-premium hover:-translate-y-1 transition-all duration-300 text-center animate-fade-in"
+              style={{ animationDelay: `${i * 0.05}s` }}
+            >
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
+                <cat.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
+              </div>
               <span className="font-semibold text-sm">{cat.label}</span>
               <span className="text-xs text-muted-foreground mt-1">{cat.desc}</span>
             </Link>

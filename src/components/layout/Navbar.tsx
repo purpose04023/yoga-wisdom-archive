@@ -22,11 +22,12 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-serif text-xl font-bold text-primary tracking-wide">
-            🙏 Yoga Wisdom Portal
+          <Link to="/" className="font-serif text-xl font-bold tracking-wide flex items-center gap-2">
+            <span className="text-gradient-gold text-2xl">ॐ</span>
+            <span className="text-foreground">Yoga Wisdom <span className="text-primary italic">Portal</span></span>
           </Link>
 
           {/* Desktop nav */}
