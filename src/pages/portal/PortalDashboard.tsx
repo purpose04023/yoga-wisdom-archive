@@ -13,8 +13,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Switch } from "@/components/ui/switch";
 import { useToast } from "@/hooks/use-toast";
 import { useTopics, useLanguages } from "@/hooks/useContentFilters";
-import { BookOpen, Video, FileText, Headphones, Languages, Tag, Globe, LogOut } from "lucide-react";
+import { BookOpen, Video, FileText, Headphones, Languages, Tag, Globe, LogOut, Sparkles } from "lucide-react";
 import PortalLoginPage from "./PortalLoginPage";
+import AIContentGenerator from "./AIContentGenerator";
 
 type ContentTable = "books" | "videos" | "journals" | "podcasts" | "translations" | "topics" | "languages";
 
@@ -47,7 +48,7 @@ const AdminDashboard = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-serif text-3xl font-bold">Admin Dashboard</h1>
+            <h1 className="font-serif text-3xl font-bold">Curator Dashboard</h1>
             <p className="text-sm text-muted-foreground">Manage all portal content</p>
           </div>
           <Button variant="outline" size="sm" onClick={signOut}><LogOut className="h-4 w-4 mr-2" /> Sign Out</Button>
@@ -75,8 +76,9 @@ const AdminDashboard = () => {
         </div>
 
         {/* Tabs for each content type */}
-        <Tabs defaultValue="books">
+        <Tabs defaultValue="ai">
           <TabsList className="flex flex-wrap h-auto gap-1 mb-6">
+            <TabsTrigger value="ai" className="gap-1"><Sparkles className="h-3.5 w-3.5" /> AI Studio</TabsTrigger>
             <TabsTrigger value="books">Books</TabsTrigger>
             <TabsTrigger value="videos">Videos</TabsTrigger>
             <TabsTrigger value="journals">Journals</TabsTrigger>
@@ -86,6 +88,7 @@ const AdminDashboard = () => {
             <TabsTrigger value="languages">Languages</TabsTrigger>
           </TabsList>
 
+          <TabsContent value="ai"><AIContentGenerator /></TabsContent>
           <TabsContent value="books"><BookForm topics={topics} languages={languages} toast={toast} qc={qc} /></TabsContent>
           <TabsContent value="videos"><VideoForm topics={topics} languages={languages} toast={toast} qc={qc} /></TabsContent>
           <TabsContent value="journals"><JournalForm topics={topics} languages={languages} toast={toast} qc={qc} /></TabsContent>
