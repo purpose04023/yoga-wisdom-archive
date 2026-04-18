@@ -40,7 +40,7 @@ const AdminDashboard = () => {
   });
 
   if (loading) return <Layout><div className="container mx-auto px-4 py-12 text-center">Loading...</div></Layout>;
-  if (!user || !isAdmin) return <AdminLoginPage />;
+  if (!user || !isAdmin) return <PortalLoginPage />;
 
   return (
     <Layout>

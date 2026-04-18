@@ -15,7 +15,7 @@ import TranslationsPage from "./pages/TranslationsPage";
 import PodcastsPage from "./pages/PodcastsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import AdminDashboard from "./pages/admin/AdminDashboard";
+import PortalDashboard from "./pages/portal/PortalDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,7 +39,7 @@ const App = () => (
           <Route path="/podcasts" element={<PodcastsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/portal" element={<PortalDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
