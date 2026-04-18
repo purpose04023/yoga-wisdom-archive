@@ -6,88 +6,98 @@
 
 @layer base {
   :root {
-    --background: 40 33% 96%;
-    --foreground: 220 20% 16%;
+    /* Inspired by the Shiva painting: misty mountain ivory, temple gold, saffron, deep charcoal */
+    --background: 35 28% 94%;
+    --foreground: 25 30% 12%;
 
-    --card: 40 30% 98%;
-    --card-foreground: 220 20% 16%;
+    --card: 36 35% 97%;
+    --card-foreground: 25 30% 12%;
 
-    --popover: 40 30% 98%;
-    --popover-foreground: 220 20% 16%;
+    --popover: 36 35% 97%;
+    --popover-foreground: 25 30% 12%;
 
-    --primary: 36 45% 42%;
-    --primary-foreground: 40 33% 96%;
+    --primary: 32 65% 38%;
+    --primary-foreground: 40 40% 97%;
 
-    --secondary: 150 15% 90%;
-    --secondary-foreground: 150 20% 25%;
+    --secondary: 30 25% 88%;
+    --secondary-foreground: 25 30% 18%;
 
-    --muted: 40 20% 92%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 12% 38%;
 
-    --accent: 150 20% 85%;
-    --accent-foreground: 150 25% 20%;
+    --accent: 18 70% 48%;
+    --accent-foreground: 40 40% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 40 40% 97%;
 
-    --border: 36 20% 88%;
-    --input: 36 20% 88%;
-    --ring: 36 45% 42%;
+    --border: 32 20% 82%;
+    --input: 32 20% 82%;
+    --ring: 32 65% 38%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 40 30% 97%;
-    --sidebar-foreground: 220 20% 16%;
-    --sidebar-primary: 36 45% 42%;
-    --sidebar-primary-foreground: 40 33% 96%;
-    --sidebar-accent: 150 20% 85%;
-    --sidebar-accent-foreground: 150 25% 20%;
-    --sidebar-border: 36 20% 88%;
-    --sidebar-ring: 36 45% 42%;
+    --sidebar-background: 36 30% 96%;
+    --sidebar-foreground: 25 30% 12%;
+    --sidebar-primary: 32 65% 38%;
+    --sidebar-primary-foreground: 40 40% 97%;
+    --sidebar-accent: 30 25% 88%;
+    --sidebar-accent-foreground: 25 30% 18%;
+    --sidebar-border: 32 20% 82%;
+    --sidebar-ring: 32 65% 38%;
 
-    --gold: 36 60% 50%;
-    --gold-light: 40 50% 85%;
-    --sage: 150 20% 60%;
-    --sage-light: 150 15% 90%;
-    --warm-ivory: 40 33% 96%;
-    --charcoal: 220 20% 16%;
+    --gold: 38 75% 48%;
+    --gold-light: 40 60% 82%;
+    --saffron: 22 85% 50%;
+    --sage: 150 18% 38%;
+    --sage-light: 150 15% 88%;
+    --warm-ivory: 38 35% 94%;
+    --charcoal: 25 30% 10%;
+    --mist: 30 15% 78%;
+
+    --gradient-hero: linear-gradient(180deg, hsl(25 30% 10% / 0.55) 0%, hsl(25 30% 10% / 0.35) 50%, hsl(35 28% 94%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 75% 48%), hsl(22 85% 50%));
+    --shadow-premium: 0 30px 80px -20px hsl(25 30% 10% / 0.35), 0 8px 20px -8px hsl(25 30% 10% / 0.2);
+    --shadow-gold: 0 10px 40px -10px hsl(38 75% 48% / 0.4);
   }
 
   .dark {
-    --background: 220 20% 10%;
-    --foreground: 40 20% 92%;
+    --background: 25 25% 8%;
+    --foreground: 38 30% 92%;
 
-    --card: 220 20% 13%;
-    --card-foreground: 40 20% 92%;
+    --card: 25 22% 11%;
+    --card-foreground: 38 30% 92%;
 
-    --popover: 220 20% 13%;
-    --popover-foreground: 40 20% 92%;
+    --popover: 25 22% 11%;
+    --popover-foreground: 38 30% 92%;
 
-    --primary: 36 50% 55%;
-    --primary-foreground: 220 20% 10%;
+    --primary: 38 75% 55%;
+    --primary-foreground: 25 30% 10%;
 
-    --secondary: 150 15% 20%;
-    --secondary-foreground: 150 15% 85%;
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 38 25% 88%;
 
-    --muted: 220 15% 18%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 25 15% 16%;
+    --muted-foreground: 30 10% 62%;
 
-    --accent: 150 15% 20%;
-    --accent-foreground: 150 15% 85%;
+    --accent: 22 75% 50%;
+    --accent-foreground: 38 30% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 38 30% 95%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 36 50% 55%;
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 38 75% 55%;
 
-    --gold: 36 50% 55%;
-    --gold-light: 36 30% 25%;
-    --sage: 150 15% 40%;
+    --gold: 38 75% 58%;
+    --gold-light: 38 35% 25%;
+    --saffron: 22 80% 55%;
+    --sage: 150 15% 45%;
     --sage-light: 150 10% 18%;
-    --warm-ivory: 220 20% 10%;
-    --charcoal: 40 20% 92%;
+    --warm-ivory: 25 25% 8%;
+    --charcoal: 38 30% 92%;
+    --mist: 30 10% 25%;
   }
 }
 
@@ -97,10 +107,24 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
   }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .shadow-premium { box-shadow: var(--shadow-premium); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
 }

@@ -55,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
         },
+        saffron: "hsl(var(--saffron))",
+        mist: "hsl(var(--mist))",
+        charcoal: "hsl(var(--charcoal))",
+        "warm-ivory": "hsl(var(--warm-ivory))",
         sage: {
           DEFAULT: "hsl(var(--sage))",
           light: "hsl(var(--sage-light))",
