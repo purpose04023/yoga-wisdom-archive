@@ -46,8 +46,8 @@ const Index = () => {
       {/* Cinematic Hero with Shiva backdrop */}
       <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden -mt-16 pt-16">
         <div
-          className="absolute inset-0 bg-cover bg-center scale-105"
-          style={{ backgroundImage: `url(${shivaHero})` }}
+          className="absolute inset-0 bg-cover scale-105"
+          style={{ backgroundImage: `url(${shivaHero})`, backgroundPosition: "center 18%" }}
           aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-hero" aria-hidden />
