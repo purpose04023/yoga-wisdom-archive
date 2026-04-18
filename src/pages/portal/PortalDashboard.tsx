@@ -14,7 +14,7 @@ import { Switch } from "@/components/ui/switch";
 import { useToast } from "@/hooks/use-toast";
 import { useTopics, useLanguages } from "@/hooks/useContentFilters";
 import { BookOpen, Video, FileText, Headphones, Languages, Tag, Globe, LogOut } from "lucide-react";
-import AdminLoginPage from "./AdminLoginPage";
+import PortalLoginPage from "./PortalLoginPage";
 
 type ContentTable = "books" | "videos" | "journals" | "podcasts" | "translations" | "topics" | "languages";
 
