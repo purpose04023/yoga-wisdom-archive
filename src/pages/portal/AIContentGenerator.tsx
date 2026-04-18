@@ -117,7 +117,7 @@ const AIContentGenerator = () => {
         base.ai_translation_hi = pack.translation_hi;
         base.ai_translation_en = pack.translation_en;
       }
-      const { error } = await supabase.from(contentType).update(base).eq("id", recordId);
+      const { error } = await supabase.from(contentType).update(base as any).eq("id", recordId);
       if (error) throw error;
       toast({ title: "Saved to record" });
     } catch (err: any) {
