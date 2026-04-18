@@ -14,7 +14,7 @@ import { Switch } from "@/components/ui/switch";
 import { useToast } from "@/hooks/use-toast";
 import { useTopics, useLanguages } from "@/hooks/useContentFilters";
 import { BookOpen, Video, FileText, Headphones, Languages, Tag, Globe, LogOut } from "lucide-react";
-import AdminLoginPage from "./AdminLoginPage";
+import PortalLoginPage from "./PortalLoginPage";
 
 type ContentTable = "books" | "videos" | "journals" | "podcasts" | "translations" | "topics" | "languages";
 
@@ -40,7 +40,7 @@ const AdminDashboard = () => {
   });
 
   if (loading) return <Layout><div className="container mx-auto px-4 py-12 text-center">Loading...</div></Layout>;
-  if (!user || !isAdmin) return <AdminLoginPage />;
+  if (!user || !isAdmin) return <PortalLoginPage />;
 
   return (
     <Layout>
