@@ -16,6 +16,16 @@ export type Database = {
     Tables: {
       books: {
         Row: {
+          ai_beginner_version: string | null
+          ai_generated_at: string | null
+          ai_key_takeaways: string[] | null
+          ai_outline: string | null
+          ai_podcast_script: string | null
+          ai_seo_tags: string[] | null
+          ai_summary: string | null
+          ai_translation_en: string | null
+          ai_translation_hi: string | null
+          ai_yoga_tags: string[] | null
           author: string | null
           book_type: string
           cover_url: string | null
@@ -30,6 +40,16 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           author?: string | null
           book_type?: string
           cover_url?: string | null
@@ -44,6 +64,16 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           author?: string | null
           book_type?: string
           cover_url?: string | null
@@ -76,6 +106,16 @@ export type Database = {
       }
       journals: {
         Row: {
+          ai_beginner_version: string | null
+          ai_generated_at: string | null
+          ai_key_takeaways: string[] | null
+          ai_outline: string | null
+          ai_podcast_script: string | null
+          ai_seo_tags: string[] | null
+          ai_summary: string | null
+          ai_translation_en: string | null
+          ai_translation_hi: string | null
+          ai_yoga_tags: string[] | null
           body: string | null
           created_at: string
           excerpt: string | null
@@ -89,6 +129,16 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           body?: string | null
           created_at?: string
           excerpt?: string | null
@@ -102,6 +152,16 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           body?: string | null
           created_at?: string
           excerpt?: string | null
@@ -154,6 +214,16 @@ export type Database = {
       }
       podcasts: {
         Row: {
+          ai_beginner_version: string | null
+          ai_generated_at: string | null
+          ai_key_takeaways: string[] | null
+          ai_outline: string | null
+          ai_podcast_script: string | null
+          ai_seo_tags: string[] | null
+          ai_summary: string | null
+          ai_translation_en: string | null
+          ai_translation_hi: string | null
+          ai_yoga_tags: string[] | null
           audio_url: string | null
           created_at: string
           description: string | null
@@ -166,6 +236,16 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           audio_url?: string | null
           created_at?: string
           description?: string | null
@@ -178,6 +258,16 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           audio_url?: string | null
           created_at?: string
           description?: string | null
@@ -229,6 +319,13 @@ export type Database = {
       }
       translations: {
         Row: {
+          ai_beginner_version: string | null
+          ai_generated_at: string | null
+          ai_key_takeaways: string[] | null
+          ai_podcast_script: string | null
+          ai_seo_tags: string[] | null
+          ai_summary: string | null
+          ai_yoga_tags: string[] | null
           created_at: string
           id: string
           is_featured: boolean
@@ -241,6 +338,13 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_yoga_tags?: string[] | null
           created_at?: string
           id?: string
           is_featured?: boolean
@@ -253,6 +357,13 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_yoga_tags?: string[] | null
           created_at?: string
           id?: string
           is_featured?: boolean
@@ -308,6 +419,16 @@ export type Database = {
       }
       videos: {
         Row: {
+          ai_beginner_version: string | null
+          ai_generated_at: string | null
+          ai_key_takeaways: string[] | null
+          ai_outline: string | null
+          ai_podcast_script: string | null
+          ai_seo_tags: string[] | null
+          ai_summary: string | null
+          ai_translation_en: string | null
+          ai_translation_hi: string | null
+          ai_yoga_tags: string[] | null
           created_at: string
           description: string | null
           id: string
@@ -321,6 +442,16 @@ export type Database = {
           video_url: string
         }
         Insert: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           created_at?: string
           description?: string | null
           id?: string
@@ -334,6 +465,16 @@ export type Database = {
           video_url: string
         }
         Update: {
+          ai_beginner_version?: string | null
+          ai_generated_at?: string | null
+          ai_key_takeaways?: string[] | null
+          ai_outline?: string | null
+          ai_podcast_script?: string | null
+          ai_seo_tags?: string[] | null
+          ai_summary?: string | null
+          ai_translation_en?: string | null
+          ai_translation_hi?: string | null
+          ai_yoga_tags?: string[] | null
           created_at?: string
           description?: string | null
           id?: string
