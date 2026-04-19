@@ -130,4 +130,17 @@
   .shadow-gold { box-shadow: var(--shadow-gold); }
   .bg-gradient-gold { background: var(--gradient-gold); }
   .bg-gradient-hero { background: var(--gradient-hero); }
+  .glow-amber { box-shadow: var(--glow-amber); }
+  .glow-amber-hover { transition: box-shadow 300ms ease, border-color 300ms ease, transform 300ms ease; }
+  .glow-amber-hover:hover {
+    box-shadow: 0 0 0 1px hsl(var(--gold) / 0.5), 0 0 32px -4px hsl(var(--gold) / 0.55), 0 0 80px -10px hsl(var(--gold) / 0.3);
+    border-color: hsl(var(--gold) / 0.6);
+  }
+  .glass-nav {
+    background: hsl(0 0% 4% / 0.55);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid hsl(var(--gold) / 0.18);
+    box-shadow: 0 1px 0 0 hsl(var(--gold) / 0.06), 0 8px 32px -12px hsl(0 0% 0% / 0.6);
+  }
 }
