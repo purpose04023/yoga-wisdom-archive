@@ -150,8 +150,8 @@ const Index = () => {
       {/* Empty state if no featured content */}
       {featuredBooks.length === 0 && featuredVideos.length === 0 && latestJournals.length === 0 && (
         <section className="container mx-auto px-4 py-16 text-center">
-          <p className="text-muted-foreground text-lg">Content is being curated. Use the Admin Portal to add books, videos, and more.</p>
-          <Button asChild className="mt-4" variant="outline"><Link to="/admin">Go to Admin</Link></Button>
+          <p className="text-muted-foreground text-lg">Content is being curated. Curators can sign in to add books, videos, and more.</p>
+          <Button asChild className="mt-4" variant="outline"><Link to="/portal">Curator Sign In</Link></Button>
         </section>
       )}
     </Layout>
