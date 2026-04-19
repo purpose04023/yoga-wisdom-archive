@@ -40,6 +40,7 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portal" element={<PortalDashboard />} />
+          <Route path="/admin" element={<Navigate to="/portal" replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
