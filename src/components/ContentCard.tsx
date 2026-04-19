@@ -14,7 +14,7 @@ interface ContentCardProps {
 
 const ContentCard = ({ title, description, imageUrl, link, badge, meta, vintage }: ContentCardProps) => (
   <Link to={link}>
-    <Card className={`group overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1 ${vintage ? "border-gold-light bg-gradient-to-b from-card to-gold-light/20" : ""}`}>
+    <Card className={`group overflow-hidden border border-gold/20 bg-card glow-amber glow-amber-hover hover:-translate-y-1 ${vintage ? "bg-gradient-to-b from-card to-secondary" : ""}`}>
       {imageUrl && (
         <div className="aspect-[3/2] overflow-hidden bg-muted">
           <img src={imageUrl} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
