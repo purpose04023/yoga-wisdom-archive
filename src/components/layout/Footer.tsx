@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h3 className="font-serif text-lg font-bold text-primary mb-3">Yoga Wisdom Portal</h3>
+          <h3 className="font-serif text-lg font-bold text-primary mb-3">Advaitha Yogam</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
             A spiritual knowledge archive preserving ancient yoga wisdom through books, translations, and teachings.
           </p>
@@ -35,7 +35,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-8 pt-8 border-t text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Yoga Wisdom Portal. All rights reserved.
+        © {new Date().getFullYear()} Advaitha Yogam. All rights reserved.
       </div>
     </div>
   </footer>

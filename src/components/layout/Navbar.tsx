@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="font-serif text-xl font-bold tracking-wide flex items-center gap-2">
             <span className="text-gradient-gold text-2xl">ॐ</span>
-            <span className="text-foreground">Yoga Wisdom <span className="text-primary italic">Portal</span></span>
+            <span className="text-foreground">Advaitha Yogam</span>
           </Link>
 
           {/* Desktop nav */}
