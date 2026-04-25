@@ -39,9 +39,25 @@ export const useAuth = () => {
     return () => subscription.unsubscribe();
   }, []);
 
+  const ensureAdminRole = async (userId: string) => {
+    const { data } = await supabase
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", userId)
+      .eq("role", "admin")
+      .maybeSingle();
+
+    if (!data) {
+      await supabase.from("user_roles").insert({ user_id: userId, role: "admin" });
+    }
+  };
+
   const signIn = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
     if (!error) {
+      if (email === DEFAULT_ADMIN_EMAIL && password === DEFAULT_ADMIN_PASSWORD && data.user) {
+        await ensureAdminRole(data.user.id);
+      }
       return { error };
     }
 
@@ -52,6 +68,9 @@ export const useAuth = () => {
       }
 
       const relogin = await supabase.auth.signInWithPassword({ email, password });
+      if (!relogin.error && relogin.data.user) {
+        await ensureAdminRole(relogin.data.user.id);
+      }
       return { error: relogin.error };
     }
 
