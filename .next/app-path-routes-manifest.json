@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/admin/books/page": "/admin/books",
+  "/admin/journals/page": "/admin/journals",
+  "/admin/members/page": "/admin/members",
+  "/admin/page": "/admin",
+  "/admin/podcasts/page": "/admin/podcasts",
+  "/admin/translations/page": "/admin/translations",
+  "/admin/videos/page": "/admin/videos",
+  "/books/[slug]/page": "/books/[slug]",
+  "/books/page": "/books",
+  "/favicon.ico/route": "/favicon.ico",
+  "/journals/[slug]/page": "/journals/[slug]",
+  "/journals/page": "/journals",
+  "/page": "/",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/videos/page": "/videos"
+}

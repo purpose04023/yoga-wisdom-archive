@@ -1,0 +1,29 @@
+{
+  "node": {
+    "7f2db3b983d487f96685fee28cb7b931eb176a8bcb": {
+      "workers": {
+        "app/admin/translations/page": {
+          "moduleId": 70866,
+          "async": false,
+          "exportedName": "addTranslation",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "addTranslation",
+      "filename": "src/app/actions/admin.ts"
+    },
+    "7f4256709b01f12a45787213d31bc6d0035ede9b20": {
+      "workers": {
+        "app/admin/translations/page": {
+          "moduleId": 70866,
+          "async": false,
+          "exportedName": "deleteTranslation",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deleteTranslation",
+      "filename": "src/app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}

@@ -430,6 +430,29 @@ const TranslationForm = ({ topics, languages, toast, qc }: FormProps) => {
             <div className="space-y-2"><Label>Source Text</Label><Textarea value={form.source_text} onChange={e => setForm(f => ({ ...f, source_text: e.target.value }))} rows={6} /></div>
             <div className="space-y-2"><Label>Translated Text</Label><Textarea value={form.translated_text} onChange={e => setForm(f => ({ ...f, translated_text: e.target.value }))} rows={6} /></div>
           </div>
+          <div className="flex gap-2">
+            <Button type="button" variant="outline" onClick={async () => {
+              // Auto-translate using LibreTranslate public instance. For production, replace with your paid translation API.
+              try {
+                if (!form.source_text) return toast({ title: 'No source text', variant: 'destructive' });
+                if (!form.target_language_id) return toast({ title: 'Select target language', variant: 'destructive' });
+                const target = languages.find((l: any) => l.id === form.target_language_id)?.code || 'en';
+                const source = languages.find((l: any) => l.id === form.source_language_id)?.code || 'auto';
+                const res = await fetch('https://libretranslate.de/translate', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ q: form.source_text, source, target, format: 'text' })
+                });
+                const data = await res.json();
+                if (data.error) throw new Error(data.error);
+                setForm(f => ({ ...f, translated_text: data.translatedText || data.translated || data.translation || data }));
+                toast({ title: 'Auto-translation complete' });
+              } catch (err: any) {
+                toast({ title: 'Translation error', description: err.message, variant: 'destructive' });
+              }
+            }}>Auto-translate</Button>
+            <p className="text-xs text-muted-foreground self-center">Auto-translation uses a public service; consider configuring a paid API for reliability.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="space-y-2">
               <Label>Source Language</Label>

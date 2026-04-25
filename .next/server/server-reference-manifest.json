@@ -1,0 +1,126 @@
+{
+  "node": {
+    "7fbe4b097af4da354c3a1075a546bba64db4ee4de8": {
+      "workers": {
+        "app/admin/books/page": {
+          "moduleId": 88201,
+          "async": false,
+          "exportedName": "addBook",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "addBook"
+    },
+    "7fc0e0a17844609363c75e8d13c1db82e7240cb0f4": {
+      "workers": {
+        "app/admin/books/page": {
+          "moduleId": 88201,
+          "async": false,
+          "exportedName": "deleteBook",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "deleteBook"
+    },
+    "7f7bfef0c839f328385441a87d9cefda1e0d5dae6a": {
+      "workers": {
+        "app/admin/journals/page": {
+          "moduleId": 16691,
+          "async": false,
+          "exportedName": "addJournal",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "addJournal"
+    },
+    "7f96f439982ce24e6958b751f102014cb5892296aa": {
+      "workers": {
+        "app/admin/journals/page": {
+          "moduleId": 16691,
+          "async": false,
+          "exportedName": "deleteJournal",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "deleteJournal"
+    },
+    "7fc0e7bfc82c149300f556888ce2dd64f4f4c00514": {
+      "workers": {
+        "app/admin/podcasts/page": {
+          "moduleId": 21571,
+          "async": false,
+          "exportedName": "addPodcast",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "addPodcast"
+    },
+    "7f4a00190136943c801fe287ab29af398333c0dd70": {
+      "workers": {
+        "app/admin/podcasts/page": {
+          "moduleId": 21571,
+          "async": false,
+          "exportedName": "deletePodcast",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "deletePodcast"
+    },
+    "7f2db3b983d487f96685fee28cb7b931eb176a8bcb": {
+      "workers": {
+        "app/admin/translations/page": {
+          "moduleId": 70866,
+          "async": false,
+          "exportedName": "addTranslation",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "addTranslation"
+    },
+    "7f4256709b01f12a45787213d31bc6d0035ede9b20": {
+      "workers": {
+        "app/admin/translations/page": {
+          "moduleId": 70866,
+          "async": false,
+          "exportedName": "deleteTranslation",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "deleteTranslation"
+    },
+    "7fb0d038ebc137dd9c2f23e7b1ea43d5dad0ab51ae": {
+      "workers": {
+        "app/admin/videos/page": {
+          "moduleId": 62117,
+          "async": false,
+          "exportedName": "addVideo",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "addVideo"
+    },
+    "7f67fbc2fda37d8dddc6854792616e1d2f6bd33e45": {
+      "workers": {
+        "app/admin/videos/page": {
+          "moduleId": 62117,
+          "async": false,
+          "exportedName": "deleteVideo",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "filename": "src/app/actions/admin.ts",
+      "exportedName": "deleteVideo"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "DTfZ5g+9SbZWQ/MTIRFA28sj3Uoy/hFpxsdAxseyZfY="
+}

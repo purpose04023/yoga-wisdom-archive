@@ -1,0 +1,29 @@
+{
+  "node": {
+    "7fb0d038ebc137dd9c2f23e7b1ea43d5dad0ab51ae": {
+      "workers": {
+        "app/admin/videos/page": {
+          "moduleId": 62117,
+          "async": false,
+          "exportedName": "addVideo",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "addVideo",
+      "filename": "src/app/actions/admin.ts"
+    },
+    "7f67fbc2fda37d8dddc6854792616e1d2f6bd33e45": {
+      "workers": {
+        "app/admin/videos/page": {
+          "moduleId": 62117,
+          "async": false,
+          "exportedName": "deleteVideo",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deleteVideo",
+      "filename": "src/app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}

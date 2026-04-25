@@ -1,0 +1,48 @@
+# Build artifacts
+node_modules
+.next
+dist
+build
+.vercel
+*.tsbuildinfo
+
+# Development files
+.env.local
+.env.*.local
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Source control
+.git
+.gitignore
+.gitattributes
+
+# Package manager files
+npm-debug.log
+yarn-debug.log
+pnpm-debug.log
+bun.lockb
+
+# Test coverage
+coverage
+.nyc_output
+
+# IDE
+.eslintcache
+
+# Logs
+logs
+*.log
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+
+# Supabase local
+supabase/.branches
+supabase/.temp

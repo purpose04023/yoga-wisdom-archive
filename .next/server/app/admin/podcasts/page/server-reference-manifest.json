@@ -1,0 +1,29 @@
+{
+  "node": {
+    "7fc0e7bfc82c149300f556888ce2dd64f4f4c00514": {
+      "workers": {
+        "app/admin/podcasts/page": {
+          "moduleId": 21571,
+          "async": false,
+          "exportedName": "addPodcast",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "addPodcast",
+      "filename": "src/app/actions/admin.ts"
+    },
+    "7f4a00190136943c801fe287ab29af398333c0dd70": {
+      "workers": {
+        "app/admin/podcasts/page": {
+          "moduleId": 21571,
+          "async": false,
+          "exportedName": "deletePodcast",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deletePodcast",
+      "filename": "src/app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}

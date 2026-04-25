@@ -1,0 +1,29 @@
+{
+  "node": {
+    "7f7bfef0c839f328385441a87d9cefda1e0d5dae6a": {
+      "workers": {
+        "app/admin/journals/page": {
+          "moduleId": 16691,
+          "async": false,
+          "exportedName": "addJournal",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "addJournal",
+      "filename": "src/app/actions/admin.ts"
+    },
+    "7f96f439982ce24e6958b751f102014cb5892296aa": {
+      "workers": {
+        "app/admin/journals/page": {
+          "moduleId": 16691,
+          "async": false,
+          "exportedName": "deleteJournal",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deleteJournal",
+      "filename": "src/app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}

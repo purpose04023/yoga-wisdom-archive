@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/books/page": "app/admin/books/page.js",
+  "/admin/journals/page": "app/admin/journals/page.js",
+  "/admin/members/page": "app/admin/members/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/podcasts/page": "app/admin/podcasts/page.js",
+  "/admin/translations/page": "app/admin/translations/page.js",
+  "/admin/videos/page": "app/admin/videos/page.js",
+  "/books/[slug]/page": "app/books/[slug]/page.js",
+  "/books/page": "app/books/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/journals/[slug]/page": "app/journals/[slug]/page.js",
+  "/journals/page": "app/journals/page.js",
+  "/page": "app/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/videos/page": "app/videos/page.js"
+}

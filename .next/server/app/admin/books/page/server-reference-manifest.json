@@ -1,0 +1,29 @@
+{
+  "node": {
+    "7fbe4b097af4da354c3a1075a546bba64db4ee4de8": {
+      "workers": {
+        "app/admin/books/page": {
+          "moduleId": 88201,
+          "async": false,
+          "exportedName": "addBook",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "addBook",
+      "filename": "src/app/actions/admin.ts"
+    },
+    "7fc0e0a17844609363c75e8d13c1db82e7240cb0f4": {
+      "workers": {
+        "app/admin/books/page": {
+          "moduleId": 88201,
+          "async": false,
+          "exportedName": "deleteBook",
+          "filename": "src/app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deleteBook",
+      "filename": "src/app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}
