@@ -6,13 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Lock } from "lucide-react";
 
-const DEFAULT_ADMIN_EMAIL = import.meta.env.VITE_DEFAULT_ADMIN_EMAIL ?? "admin@wisdomarchive.com";
-const DEFAULT_ADMIN_PASSWORD = import.meta.env.VITE_DEFAULT_ADMIN_PASSWORD ?? "Admin1234!";
-
 const PortalLoginPage = () => {
   const { signIn } = useAuth();
-  const [email, setEmail] = useState(DEFAULT_ADMIN_EMAIL);
-  const [password, setPassword] = useState(DEFAULT_ADMIN_PASSWORD);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -53,7 +50,7 @@ const PortalLoginPage = () => {
                   id="email"
                   type="email"
                   autoComplete="email"
-                  placeholder="you@example.com"
+                  placeholder="admin@wisdomarchive.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -66,7 +63,7 @@ const PortalLoginPage = () => {
                   id="password"
                   type="password"
                   autoComplete="current-password"
-                  placeholder="••••••••"
+                  placeholder="Enter your password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
