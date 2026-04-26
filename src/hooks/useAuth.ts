@@ -62,6 +62,18 @@ export const useAuth = () => {
     }
 
     if (email === DEFAULT_ADMIN_EMAIL && password === DEFAULT_ADMIN_PASSWORD) {
+      const signupError = error.message || "Unable to sign in with the default admin account.";
+      const signupsDisabled = signupError.toLowerCase().includes("signups not allowed") || signupError.toLowerCase().includes("signup is disabled");
+
+      if (signupsDisabled) {
+        return {
+          error: {
+            message:
+              "Signups are disabled for this Supabase instance. Create the admin user manually in Supabase Auth or enable email signups, then try again.",
+          },
+        };
+      }
+
       const { error: signUpError } = await supabase.auth.signUp({ email, password });
       if (signUpError && signUpError.message !== "User already registered") {
         return { error: signUpError };
